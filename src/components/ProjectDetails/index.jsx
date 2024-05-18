@@ -182,6 +182,7 @@ const Button = styled.a`
 
 const index = ({ openModal, setOpenModal }) => {
     const project = openModal?.project;
+
     return (
         <Modal open={true} onClose={() => setOpenModal({ state: false, project: null })}>
             <Container>
@@ -229,7 +230,6 @@ const index = ({ openModal, setOpenModal }) => {
                     </ButtonGroup>
                 </Wrapper>
             </Container>
-
         </Modal>
     )
 }

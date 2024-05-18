@@ -39,7 +39,7 @@ const HeroBg = styled.div`
 
   @media screen and (max-width: 960px) {
     justify-content: center;
-    padding: 0 0px;
+    padding: 10;
   }
 `;
 
@@ -178,7 +178,7 @@ const ResumeButton = styled.a`
   }    
   
   @media screen and (max-width: 640px) {
-      padding: 12px 0;
+      padding: 10px 0;
       font-size: 18px;
   } 
 `;
@@ -204,12 +204,6 @@ const Img = styled.img`
 `;
 
 const HeroSection = () => {
-
-  const handleResumeButtonClick = () => {
-    const resumeUrl = "https://drive.google.com/file/d/1SSg6H4ovmhLLH3SfpOktASrxVzP3B_W3/view?usp=sharing";
-    window.open(resumeUrl, "_blank"); // Open resume in a new tab
-  };
-
   return (
       <div id="about">
           <HeroContainer>
@@ -232,7 +226,8 @@ const HeroSection = () => {
                           </Span>
                       </TextLoop>
                       <SubTitle>{Bio.description}</SubTitle>
-                      <ResumeButton onClick={handleResumeButtonClick}>Check Resume</ResumeButton> 
+                      {/* <ResumeButton onClick={handleResumeButtonClick}>Check Resume</ResumeButton>  */}
+                      <ResumeButton href="resume.pdf" target="_blank" rel="noopener noreferrer">Check Resume</ResumeButton>              
                   </HeroLeftContainer>
 
                   <HeroRightContainer id="Right">
