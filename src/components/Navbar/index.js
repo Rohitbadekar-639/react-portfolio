@@ -16,7 +16,7 @@ const Nav = styled.div`
    position: sticky;
    top: 0;
    z-index: 10;
-   @media screen and (max-width: 960px) {
+   @media screen and (max-width: 768px) {
       transition: 0.8s all ease;      
    }
 `;
@@ -89,7 +89,7 @@ const ButtonContainer = styled.div`
   width: auto;
   height: 100%;
 
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 768px) {
     display: none;
   }
 `;
@@ -130,7 +130,7 @@ const MobileMenu = styled.div`
     justify-content: center;
     gap: 10px;
     position: absolute;
-    top: 70px;
+    top: 80px;
     right: 0;
     width: 40%;
     padding: 20px 40px;
@@ -141,11 +141,15 @@ const MobileMenu = styled.div`
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
     opacity: ${({ open }) => (open ? '1' : '0')};
     z-index: ${({ open }) => (open ? '1' : '-1')};
+
+    @media screen and (min-width: 640px) {
+      display: none;
+    }
 `;
 
 const MobileMenuLinks = styled(LinkR)`
   color: ${({ theme }) => theme.text_primary};
-  font-weight: 600;
+  font-weight: 500;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
@@ -187,13 +191,13 @@ const Navbar = () => {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: "smooth", block: "start" });
-      setOpen(false); // Close the mobile menu after scrolling
+      setOpen(false); 
     }
   };
 
   const handleGithubButtonClick = () => {
     const githubProfileUrl = "https://github.com/Rohitbadekar-639";
-    window.open(githubProfileUrl, "_blank"); // Open GitHub profile in a new tab
+    window.open(githubProfileUrl, "_blank"); 
   };
 
   return (
@@ -219,12 +223,12 @@ const Navbar = () => {
       </NavContainer>
       
       <MobileMenu ref={mobileMenuRef} open={open}>
-        <MobileMenuLinks onClick={() => scrollToSection("about")}>About</MobileMenuLinks>
-        <MobileMenuLinks onClick={() => scrollToSection("skills")}>Skills</MobileMenuLinks>
-        <MobileMenuLinks onClick={() => scrollToSection("experience")}>Experience</MobileMenuLinks>
-        <MobileMenuLinks onClick={() => scrollToSection("projects")}>Projects</MobileMenuLinks>
-        <MobileMenuLinks onClick={() => scrollToSection("education")}>Education</MobileMenuLinks>
-        <MobileMenuLinks onClick={() => scrollToSection("contact")}>Contact</MobileMenuLinks>
+      <MobileMenuLinks to='#about' onClick={() => scrollToSection("about")}>About</MobileMenuLinks>
+        <MobileMenuLinks to='#skills' onClick={() => scrollToSection("skills")}>Skills</MobileMenuLinks>
+        <MobileMenuLinks to='#experience' onClick={() => scrollToSection("experience")}>Experience</MobileMenuLinks>
+        <MobileMenuLinks to='#projects' onClick={() => scrollToSection("projects")}>Projects</MobileMenuLinks>
+        <MobileMenuLinks to='#education' onClick={() => scrollToSection("education")}>Education</MobileMenuLinks>
+        <MobileMenuLinks to='#contact' onClick={() => scrollToSection("contact")}>Contact</MobileMenuLinks>
         <GithubButton 
           style={{ padding: '10px 16px', background: `${theme.primary}`, color: 'white', width: 'max-content' }} 
           onClick={handleGithubButtonClick}

@@ -65,7 +65,7 @@ const HeroLeftContainer = styled.div`
     align-items: center;
   }
 
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 768px) {
     order: 2;
     margin-bottom: 32px;
     display: flex;
@@ -155,8 +155,6 @@ const ResumeButton = styled.a`
   z-index: 1;
   display: inline-block;
   text-decoration: none;
-  width: 95%;
-  max-width: 300px;
   text-align: center;
   padding: 16px 30px;
   font-size: 20px;
@@ -171,10 +169,9 @@ const ResumeButton = styled.a`
   transition: all 0.2s ease-in-out;
   box-shadow: 20px 20px 60px #1F2634, -20px -20px 60px #1F2634;
 
-  &:hover {
+  ${'' /* &:hover { */}
     transform: scale(1.05);
     transition: all 0.4s ease-in-out;
-    box-shadow: 20px 20px 60px #1F2634;
     filter: brightness(1);
   }
 
@@ -228,7 +225,7 @@ const HeroSection = () => {
             </TextLoop>
             <SubTitle>{Bio.description}</SubTitle>
             <ResumeButton 
-              href="https://drive.google.com/file/d/1BGurXaVMO8fvBggrB4YVb7E8dM0oHeT3/view?usp=sharing" 
+              href="https://drive.google.com/file/d/1U4VRZpG0DxCcx4A1f1c0ta2V6C28ZrIL/view?usp=sharing" 
               target="_blank" rel="noopener noreferrer">Check Resume</ResumeButton>
           </HeroLeftContainer>
 
