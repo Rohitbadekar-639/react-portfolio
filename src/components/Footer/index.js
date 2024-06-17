@@ -38,6 +38,7 @@ const Nav = styled.nav`
   flex-direction: row;
   gap: 2rem;
   justify-content: center;
+  
   @media (max-width: 768px) {
     flex-wrap: wrap;
     gap: 1rem;
@@ -68,7 +69,7 @@ const SocialMediaIcons = styled.div`
 const SocialMediaIcon = styled.a`
   display: inline-block;
   margin: 0 1rem;
-  font-size: 1.5rem;
+  font-size: 2rem; 
   color: ${({ theme }) => theme.text_primary};
   transition: color 0.2s ease-in-out;
   &:hover {
@@ -97,10 +98,18 @@ function Footer() {
           <NavLink href="#contact">Contact</NavLink>
         </Nav>
         <SocialMediaIcons>
-          <SocialMediaIcon href={Bio.facebook} target="_blank"><FacebookIcon /></SocialMediaIcon>
-          <SocialMediaIcon href={Bio.twitter} target="_blank"><TwitterIcon /></SocialMediaIcon>
-          <SocialMediaIcon href={Bio.linkedin} target="_blank"><LinkedInIcon /></SocialMediaIcon>
-          <SocialMediaIcon href={Bio.insta} target="_blank"><InstagramIcon /></SocialMediaIcon>
+        <SocialMediaIcon href={Bio.facebook} target="_blank">
+            <FacebookIcon style={{ fontSize: 'inherit' }} />
+          </SocialMediaIcon>
+          <SocialMediaIcon href={Bio.twitter} target="_blank">
+            <TwitterIcon style={{ fontSize: 'inherit' }} />
+          </SocialMediaIcon>
+          <SocialMediaIcon href={Bio.linkedin} target="_blank">
+            <LinkedInIcon style={{ fontSize: 'inherit' }} />
+          </SocialMediaIcon>
+          <SocialMediaIcon href={Bio.insta} target="_blank">
+            <InstagramIcon style={{ fontSize: 'inherit' }} />
+          </SocialMediaIcon>
         </SocialMediaIcons>
         <Copyright>
           &copy; 2024 Rohit Badekar. All rights reserved.

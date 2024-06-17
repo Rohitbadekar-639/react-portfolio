@@ -342,13 +342,13 @@ export const projects = [
     title: "Todo List Web App",
     date: "Jun 2023 - Jul 2023",
     description:
-      " A Todo Web App made with React JS, Redux, and Material UI. It has a login page where users can log in with their Google account. It has a sidebar where users can see all the tasks and can create a new task. It has a calendar where users can see all the tasks on a particular date. It has a search bar where users can search for a particular task.",
+      " A Todo Web App made with Next.js and TypeScript. It's a basic daily to-do list app to practice more about Next.js and TypeScript. It has a search bar where users can search for a particular task.",
     image:
       "https://1.bp.blogspot.com/-i78iKr_P9Pk/X9ohjXyc5eI/AAAAAAAAA_4/8UauxZaOgUshGK7MXwW1gZqts7Zrf_AewCLcBGAsYHQ/s1280/Todo%2BList%2BApp%2Busing%2BHTML%2BCSS%2B%2526%2BJavaScript.webp",
     tags: ["React Js", "AWS", "OAuth", "Node JS", "CodeSandbox"],
     category: "web app",
     github: "https://github.com/Rohitbadekar-639/todolist-typescript-next.js",
-    webapp: "https://github.com/Rohitbadekar-639/todolist-typescript-next.js",
+    webapp: "https://todolist-typescript-next-js.vercel.app/",
   },
   {
     id: 5,

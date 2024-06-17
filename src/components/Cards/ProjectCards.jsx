@@ -2,21 +2,27 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Button = styled.button`
-    display: none;
     width: 100%;
     padding: 10px;
     background-color: ${({ theme }) => theme.white};
     color: ${({ theme }) => theme.text_black};
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 800;
     border: none;
     border-radius: 10px;
     cursor: pointer;
     transition: all 0.8s ease-in-out;
+
+    &:hover {
+        color: purple;
+        transform: translateY(10px);
+        box-shadow: 0 0 50px 4px rgba(0,0,0,0.6);
+        filter: brightness(1.1); 
+    }
 `;
 
 const Card = styled.div`
-    width: 330px;
+    width: 350px;
     background-color: ${({ theme }) => theme.card};
     cursor: pointer;
     border-radius: 10px;
@@ -27,13 +33,19 @@ const Card = styled.div`
     flex-direction: column;
     gap: 14px;
     transition: all 0.5s ease-in-out;
+
     &:hover {
         transform: translateY(-10px);
-        box-shadow: 0 0 50px 4px rgba(0,0,0,0.6);
-        filter: brightness(1.1);
     }
-    &:hover ${Button} {
+
+    button {
         display: block;
+        opacity: 1; 
+        transition: opacity 0.3s ease-in-out; 
+    }
+
+    &:hover button {
+        opacity: 1;
     }
 `;
 
@@ -100,9 +112,13 @@ const Description = styled.div`
     margin-top: 8px;
     display: -webkit-box;
     max-width: 100%;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 3; /* Limit to 3 lines */
     -webkit-box-orient: vertical;
     text-overflow: ellipsis;
+    transition: all 0.5s ease; /* Added transition */
+    &:hover {
+        -webkit-line-clamp: unset; /* Show all lines on hover */
+    }
 `;
 
 const Members = styled.div`
@@ -121,7 +137,7 @@ const Avatar = styled.img`
     border: 3px solid ${({ theme }) => theme.card};
 `;
 
-const ProjectCards = ({ project, setOpenModal }) => {
+const ProjectCards = ({ project }) => {
     const handleButtonClick = (e) => {
         e.stopPropagation();
         window.open(project.webapp, '_blank');

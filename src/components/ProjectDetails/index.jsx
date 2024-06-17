@@ -57,10 +57,7 @@ const Desc = styled.div`
     font-weight: 400;
     color: ${({ theme }) => theme.text_primary};
     margin: 8px 6px;
-    @media only screen and (max-width: 600px) {
-        font-size: 14px;
-        margin: 6px 6px;
-    }
+    white-space: pre-line;
 `;
 
 const Image = styled.img`
@@ -180,7 +177,7 @@ const Button = styled.a`
 `;
 
 
-const index = ({ openModal, setOpenModal }) => {
+const ProjectDetails = ({ openModal, setOpenModal }) => {
     const project = openModal?.project;
 
     return (
@@ -234,4 +231,4 @@ const index = ({ openModal, setOpenModal }) => {
     )
 }
 
-export default index
+export default ProjectDetails

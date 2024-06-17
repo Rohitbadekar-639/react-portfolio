@@ -140,6 +140,7 @@ const SubTitle = styled.div`
 
   @media screen and (max-width: 960px) {
     text-align: center;
+    max-width: 400px;
   }
 
   @media screen and (max-width: 640px) {
@@ -173,7 +174,7 @@ const ResumeButton = styled.a`
     transform: scale(1.05);
     transition: all 0.4s ease-in-out;
     filter: brightness(1);
-  }
+  ${'' /* } */}
 
   @media (max-width: 640px) {
     padding: 12px 30px;
