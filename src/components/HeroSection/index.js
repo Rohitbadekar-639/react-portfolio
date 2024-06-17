@@ -103,15 +103,15 @@ const Title = styled.div`
   }
 
   @media screen and (max-width: 640px) {
-    font-size: 40px;
-    line-height: 48px;
-    margin-bottom: 8px;
+    font-size: 30px;
+    line-height: 50px;
+    margin-bottom: 10px;
   }
 `;
 
 const TextLoop = styled.div`
-  font-weight: 600px;
-  font-size: 25px;
+  font-weight: 500px;
+  font-size: 20px;
   display: flex;
   gap: 12px;
   color: ${({ theme }) => theme.text_primary};
@@ -120,16 +120,18 @@ const TextLoop = styled.div`
   @media screen and (max-width: 960px) {
     text-align: center;
   }
+
   @media screen and (max-width: 640px) {
-    font-size: 22px;
+    font-size: 20px;
     line-height: 48px;
-    margin-bottom: 16px;
+    margin-bottom: 10px;
   }
 `;
 
 const Span = styled.span`
   color: ${({ theme }) => theme.primary};
   cursor: pointer;
+  font-size: 20px;
 `;
 
 const SubTitle = styled.div`
@@ -144,8 +146,8 @@ const SubTitle = styled.div`
   }
 
   @media screen and (max-width: 640px) {
-    font-size: 16px;
-    line-height: 32px;
+    font-size: 15px;
+    line-height: 30px;
   }
 `;
 
@@ -169,12 +171,26 @@ const ResumeButton = styled.a`
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   box-shadow: 20px 20px 60px #1F2634, -20px -20px 60px #1F2634;
+  position: relative; 
 
-  ${'' /* &:hover { */}
-    transform: scale(1.05);
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit; 
+    opacity: 0;
     transition: all 0.4s ease-in-out;
-    filter: brightness(1);
-  ${'' /* } */}
+    border-radius: inherit; 
+  }
+
+  &:hover {
+    &::after {
+      opacity: 0.3; 
+    }
+  }
 
   @media (max-width: 640px) {
     padding: 12px 30px;
