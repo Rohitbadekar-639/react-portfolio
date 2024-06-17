@@ -42,7 +42,7 @@ margin-top: 20px;
 export const Desc = styled.div`
     font-size: 18px;
     text-align: center;
-    max-width: 600px;
+    max-width: 480px;
     color: ${({ theme }) => theme.text_secondary};
     @media (max-width: 768px) {
         margin-top: 12px;

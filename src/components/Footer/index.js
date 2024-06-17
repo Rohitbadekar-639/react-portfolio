@@ -50,7 +50,7 @@ const Nav = styled.nav`
 const NavLink = styled.a`
 color: ${({ theme }) => theme.text_primary};
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   transition: color 0.2s ease-in-out;
   &:hover {
     color: ${({ theme }) => theme.primary};

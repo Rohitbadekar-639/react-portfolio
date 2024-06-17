@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Div = styled.div`
-    width:600px;
+    width: 500px;
     height: 500px;
 `
 

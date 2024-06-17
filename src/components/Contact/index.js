@@ -55,7 +55,7 @@ const Desc = styled.div`
 `;
 
 const ContactForm = styled.form`
-  width: 90%;
+  width: 80%;
   max-width: 600px;
   display: flex;
   flex-direction: column;
@@ -120,8 +120,6 @@ const ContactButton = styled.input`
 `
 
 const Contact = () => {
-
-  //hooks
   const [open, setOpen] = React.useState(false);
   const form = useRef();
 
