@@ -6,7 +6,7 @@ const Button = styled.button`
     padding: 10px;
     background-color: ${({ theme }) => theme.white};
     color: ${({ theme }) => theme.text_black};
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 800;
     border: none;
     border-radius: 10px;
@@ -15,8 +15,10 @@ const Button = styled.button`
 
     &:hover {
         color: purple;
-        box-shadow: 0 0 50px 4px rgba(0,0,0,0.6);
-        filter: brightness(1.1); 
+    }
+
+    @media (max-width: 768px) {
+        font-size: 14px;
     }
 `;
 
@@ -37,15 +39,10 @@ const Card = styled.div`
         transform: translateY(-10px);
     }
 
-    button {
-        display: block;
-        opacity: 1; 
-        transition: opacity 0.3s ease-in-out; 
-    }
-
-    &:hover button {
-        opacity: 1;
-    }
+    @media (max-width: 768px) {
+    width: 75%; 
+    margin-bottom: 20px; 
+  }
 `;
 
 const Image = styled.img`
