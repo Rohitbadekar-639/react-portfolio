@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import styled from "styled-components";
 import HeroBgAnimation from '../HeroBgAnimation';
-import HeroImg from '../../images/HeroImage.jpg'; 
-import Typewriter from 'typewriter-effect';
+import HeroImgWebP from '../../images/HeroImage.webp'; // Converted image to WebP format
 import { Bio } from '../../data/constants';
+
+const Typewriter = lazy(() => import('typewriter-effect'));
 
 const HeroContainer = styled.div`
   background-color: ${({ theme }) => theme.card_light};
@@ -14,32 +15,11 @@ const HeroContainer = styled.div`
   @media screen and (max-width: 960px) {
     padding: 66px 16px;
   }
-  @media screen and (max-width: 640) {
+  @media screen and (max-width: 640px) {
     padding: 32px 16px;
   }
   z-index: 1;
-
   clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 95%, 0 100%);
-`;
-
-const HeroBg = styled.div`
-  position: absolute;
-  display: flex;
-  justify-content: end;
-  top: 58%;
-  right: 0;
-  bottom: 0;
-  left: 45%;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  padding: 0 100px;
-  transform: translateX(-50%) translateY(-50%);
-
-  @media screen and (max-width: 960px) {
-    justify-content: center;
-    padding: 10;
-  }
 `;
 
 const HeroInnerContainer = styled.div`
@@ -48,7 +28,6 @@ const HeroInnerContainer = styled.div`
   align-items: center;
   width: 100%;
   max-width: 1100px;
-
   @media screen and (max-width: 960px) {
     flex-direction: column;
   }
@@ -64,32 +43,12 @@ const HeroLeftContainer = styled.div`
     flex-direction: column;
     align-items: center;
   }
-
   @media screen and (max-width: 768px) {
     order: 2;
     margin-bottom: 32px;
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-`;
-
-const HeroRightContainer = styled.div`
-  width: 100%;
-  display: flex;
-  order: 2;
-  justify-content: end;
-  gap: 12px;
-  @media screen and (max-width: 960px) {
-    order: 1;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 80px;
-  }
-
-  @media screen and (max-width: 640px) {
-    order: 1;
-    margin-bottom: 30px;
   }
 `;
 
@@ -101,7 +60,6 @@ const Title = styled.div`
   @media screen and (max-width: 960px) {
     text-align: center;
   }
-
   @media screen and (max-width: 640px) {
     font-size: 30px;
     line-height: 50px;
@@ -116,11 +74,9 @@ const TextLoop = styled.div`
   gap: 12px;
   color: ${({ theme }) => theme.text_primary};
   line-height: 68px;
-
   @media screen and (max-width: 960px) {
     text-align: center;
   }
-
   @media screen and (max-width: 640px) {
     font-size: 20px;
     line-height: 48px;
@@ -139,12 +95,10 @@ const SubTitle = styled.div`
   line-height: 32px;
   margin-bottom: 42px;
   color: ${({ theme }) => theme.text_primary};
-
   @media screen and (max-width: 960px) {
     text-align: center;
     max-width: 400px;
   }
-
   @media screen and (max-width: 640px) {
     font-size: 15px;
     line-height: 30px;
@@ -165,14 +119,11 @@ const ResumeButton = styled.a`
   color: ${({ theme }) => theme.white};
   background: hsla(271, 100%, 50%, 1);
   background: linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
-  background: -moz-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
-  background: -webkit-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
   border-radius: 30px;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   box-shadow: 20px 20px 60px #1F2634, -20px -20px 60px #1F2634;
   position: relative; 
-
   &::after {
     content: "";
     position: absolute;
@@ -185,16 +136,34 @@ const ResumeButton = styled.a`
     transition: all 0.4s ease-in-out;
     border-radius: inherit; 
   }
-
   &:hover {
     &::after {
       opacity: 0.3; 
     }
   }
-
   @media (max-width: 640px) {
     padding: 12px 30px;
     font-size: 18px;
+  }
+`;
+
+const HeroRightContainer = styled.div`
+  width: 100%;
+  display: flex;
+  order: 2;
+  justify-content: end;
+  gap: 12px;
+  @media screen and (max-width: 960px) {
+    order: 1;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+    padding-top: 50px;
+  }
+  @media screen and (max-width: 640px) {
+    order: 1;
+    margin-bottom: 30px;
+    padding-top: 50px;
   }
 `;
 
@@ -206,15 +175,28 @@ const Img = styled.img`
   max-height: 400px;
   border-radius: 50%;
   border: 2px solid ${({ theme }) => theme.primary};
-
-  @media screen and (max-width: 768px) {
-    max-width: 400px;
-    max-height: 400px;
-  }
-
   @media screen and (max-width: 640px) {
-    max-width: 280px;
-    max-height: 280px;
+    max-width: 240px;
+    max-height: 240px;
+  }
+`;
+
+const HeroBg = styled.div`
+  position: absolute;
+  display: flex;
+  justify-content: end;
+  top: 58%;
+  right: 0;
+  bottom: 0;
+  left: 45%;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  padding: 0 100px;
+  transform: translateX(-50%) translateY(-50%);
+  @media screen and (max-width: 960px) {
+    justify-content: center;
+    padding: 10;
   }
 `;
 
@@ -228,26 +210,31 @@ const HeroSection = () => {
         <HeroInnerContainer>
           <HeroLeftContainer id="Left">
             <Title>Hello, I am <br /> {Bio.name}</Title>
-            <TextLoop> 
+            <TextLoop>
               I am a
               <Span>
-                <Typewriter
-                  options={{
-                    strings: Bio.roles,
-                    autoStart: true,
-                    loop: true,
-                  }}
-                />
+                <Suspense fallback={<div>Loading...</div>}>
+                  <Typewriter
+                    options={{
+                      strings: Bio.roles,
+                      autoStart: true,
+                      loop: true,
+                    }}
+                  />
+                </Suspense>
               </Span>
             </TextLoop>
             <SubTitle>{Bio.description}</SubTitle>
             <ResumeButton 
               href="https://drive.google.com/file/d/1U4VRZpG0DxCcx4A1f1c0ta2V6C28ZrIL/view?usp=sharing" 
-              target="_blank" rel="noopener noreferrer">Check Resume</ResumeButton>
+              target="_blank" 
+              rel="noopener noreferrer">
+                Check Resume
+            </ResumeButton>
           </HeroLeftContainer>
 
           <HeroRightContainer id="Right">
-            <Img src={HeroImg} alt="hero-image" /> 
+            <Img src={HeroImgWebP} alt="Hero image of [your name]" loading="lazy" />
           </HeroRightContainer>
         </HeroInnerContainer>
       </HeroContainer>
