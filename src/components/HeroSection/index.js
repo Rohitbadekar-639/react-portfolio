@@ -1,7 +1,7 @@
 import React, { Suspense, lazy } from 'react';
 import styled from "styled-components";
 import HeroBgAnimation from '../HeroBgAnimation';
-import HeroImgWebP from '../../images/HeroImage.webp'; // Converted image to WebP format
+import HeroImgWebP from '../../images/HeroImage.webp'; 
 import { Bio } from '../../data/constants';
 
 const Typewriter = lazy(() => import('typewriter-effect'));
