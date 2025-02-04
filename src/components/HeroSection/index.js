@@ -1,7 +1,6 @@
 import React, { Suspense, lazy } from 'react';
 import styled from "styled-components";
 import HeroBgAnimation from '../HeroBgAnimation';
-import HeroImgWebP from '../../images/HeroImage.webp'; 
 import { Bio } from '../../data/constants';
 
 const Typewriter = lazy(() => import('typewriter-effect'));
@@ -185,7 +184,7 @@ const HeroBg = styled.div`
   position: absolute;
   display: flex;
   justify-content: end;
-  top: 58%;
+  top: 60%;
   right: 0;
   bottom: 0;
   left: 45%;
@@ -209,7 +208,7 @@ const HeroSection = () => {
         </HeroBg>
         <HeroInnerContainer>
           <HeroLeftContainer id="Left">
-            <Title>Hello, I am <br /> {Bio.name}</Title>
+            <Title>Hello, Myself <br /> {Bio.name}</Title>
             <TextLoop>
               I am a
               <Span>
@@ -219,6 +218,7 @@ const HeroSection = () => {
                       strings: Bio.roles,
                       autoStart: true,
                       loop: true,
+                      delay: 40,
                     }}
                   />
                 </Suspense>
@@ -226,7 +226,7 @@ const HeroSection = () => {
             </TextLoop>
             <SubTitle>{Bio.description}</SubTitle>
             <ResumeButton 
-              href="https://drive.google.com/file/d/1U4VRZpG0DxCcx4A1f1c0ta2V6C28ZrIL/view?usp=sharing" 
+              href="https://drive.google.com/file/d/1XGFEIXcmmcRtMzIqtKgkVz_VKQNxJapC/view?usp=sharing" 
               target="_blank" 
               rel="noopener noreferrer">
                 Check Resume
@@ -234,7 +234,7 @@ const HeroSection = () => {
           </HeroLeftContainer>
 
           <HeroRightContainer id="Right">
-            <Img src={HeroImgWebP} alt="Hero image of [your name]" loading="lazy" />
+            <Img src="/assets/HeroImage.webp" alt="Hero image of Rohit Badekar" loading="lazy" />
           </HeroRightContainer>
         </HeroInnerContainer>
       </HeroContainer>

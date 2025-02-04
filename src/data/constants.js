@@ -1,14 +1,17 @@
 export const Bio = {
   name: "Rohit Badekar",
   roles: [
-    "Full Stack Web Developer",
+    "Full Stack Developer",
+    "Frontend/UI-UX Designer",
     "Mobile App Developer",
-    "UI/UX Designer",
-    "Blogger/Writer",
+    "Blogger/Freelancer",
+    "Business/Startup Enthusiast",
   ],
-  description: "I am a Software Engineer with 2+ years of experience in full-stack software development. I have a strong foundation in technologies like HTML, CSS, JavaScript, MERN Stack, Git and REST APIs. I am also proficient in TypeScript, Next.js, PHP, SQL and Java which allows me to adapt to diverse project requirements.",
+  description:
+    "I am a Full Stack Software Engineer with 2+ years of experience. I have a strong foundation in technologies like HTML5, CSS3, JavaScript(ES6+), MERN Stack, Git and REST APIs. I am also proficient in TypeScript, Next.js, Tailwind CSS, MySQL, C++ and Java which allows me to adapt to diverse project requirements.",
   github: "https://github.com/Rohitbadekar-639",
-  resume: "https://github.com/Rohitbadekar-639/rohit-portfolio/blob/master/public/resume.pdf",
+  resume:
+    "https://drive.google.com/file/d/1ZikL10xetTIQIjax8s9mI1-2B3mp21BJ/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/rohit-badekar/",
   twitter: "https://twitter.com/rohitbadekar555",
   insta: "https://www.instagram.com/rohit_badekar_7/",
@@ -31,11 +34,11 @@ export const skills = [
           "https://d33wubrfki0l68.cloudfront.net/0834d0215db51e91525a25acf97433051f280f2f/c30f5/img/redux.svg",
       },
       {
-        name: "Material UI",
+        name: "Material-UI",
         image:
           "https://miro.medium.com/v2/resize:fit:1400/1*TQl9zcnPmGuj8ozz2iooSA.png",
       },
-      
+
       {
         name: "HTML5",
         image: "https://www.w3.org/html/logo/badge/html5-badge-h-solo.png",
@@ -54,7 +57,7 @@ export const skills = [
         name: "Next.js",
         image:
           "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACTklEQVR4Ab1XAaQqURB9DyohSykREpRIQSAlBCoECKUFCSRCBBEAaSEABQEoCIEASCwAUICALgCo83do0//9v819XX845O7VnDkzOzP7JWGaBd3C3IJpQVjAHeJ+Rs9a97vKLGrBsB1KgMhEP3FMUUwt4ENMfxr1yQIU4SSjRkbeOZtERmHk6pXQVDlnkHh9S+QLTm1hkiz4n/gzFQuny9FoFLquE+i34x+n02k0m00UCoV3BIzn3MMJrVYLtp1OJ0cS/X4f5/MZhmG8IyDsWtDfEaDIn2232/3zbrvdxuFwwGg04qRBt+VnETBNE0IIkE2n07/erdfrWK/X6Ha73Hb9ZXII3G43ivy3dNRqtZe7lUoFs9mM6oBDwCQCgquALT1FT3a5XF7qIZ/PYzgcolqtcggIIgBZAgRKB6lCRalp2uM8k8mAVMrlchwC+DEBipycE4n5fP44j8ViKJVKSCaTbAJCpgaez4vFIsjoWa/XA50FAgEkEgmEw2F2CkxZBZ5Br5tt1ITcbjd8Ph88Hg+7CBefECCsVitS4aVJcV9D/VMCVITk/Hq9YrPZyBBo2a1YMGvAcQYcj0cCtWMugcdYNhjDiBrP25mx3++x3W6RzWZZ8isfxzQLlsslJpMJpYY5jhkqcOH1ejEYDDAej9FoNOByuZxGsfqVzC7KTqcDSkkqleKsZOqX0mAwiHK5DGrJfr+fs5SqX8sjkQji8ThCoRC+v78Za7l6JagrUh3YkUuZpqgwDaecc9VYSDoV5Fg+at7n+eLN57kuE/EvzHr/Kvs31aYAAAAASUVORK5CYII=",
-      },     
+      },
       {
         name: "Tailwind CSS",
         image:
@@ -64,7 +67,7 @@ export const skills = [
         name: "npm",
         image:
           "https://static-00.iconduck.com/assets.00/npm-icon-2048x2048-3xqnd60o.png",
-      },      
+      },
       {
         name: "TypeScript",
         image:
@@ -74,6 +77,21 @@ export const skills = [
         name: "Figma",
         image:
           "https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg",
+      },
+      {
+        name: "Chart.js",
+        image:
+          "https://images.seeklogo.com/logo-png/49/2/chart-js-logo-png_seeklogo-496478.png",
+      },
+      {
+        name: "Three.js",
+        image:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRPDhSqqt_dCHFlEaOlTagl2DrZ86dkruYug&s",
+      },
+      {
+        name: "Bootstrap",
+        image:
+          "https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png",
       },
     ],
   },
@@ -91,7 +109,8 @@ export const skills = [
       },
       {
         name: "REST APIs",
-        image: "https://media.licdn.com/dms/image/D4D12AQEeNNHq05k7MA/article-cover_image-shrink_720_1280/0/1687786979245?e=2147483647&v=beta&t=AVc2G-hvHNjTMklQtEt6qlby2l79Bf5dBBkUB5DBRe0",
+        image:
+          "https://media.licdn.com/dms/image/D4D12AQEeNNHq05k7MA/article-cover_image-shrink_720_1280/0/1687786979245?e=2147483647&v=beta&t=AVc2G-hvHNjTMklQtEt6qlby2l79Bf5dBBkUB5DBRe0",
       },
       {
         name: "C/C++",
@@ -110,7 +129,8 @@ export const skills = [
       },
       {
         name: "Axios",
-        image: "https://cdn.icon-icons.com/icons2/2699/PNG/512/axios_logo_icon_168545.png",
+        image:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqynh9tnAbPVgXfQrvD8vLbktM7S9PPEfeuA&s",
       },
       {
         name: "Firebase",
@@ -122,7 +142,23 @@ export const skills = [
       },
       {
         name: "Spring Boot",
-        image: "https://upload.wikimedia.org/wikipedia/commons/7/79/Spring_Boot.svg",
+        image:
+          "https://upload.wikimedia.org/wikipedia/commons/7/79/Spring_Boot.svg",
+      },
+      {
+        name: "ChatGPT",
+        image:
+          "https://thumbs.dreamstime.com/b/minsk-belarus-openai-chatgpt-logo-artifical-chatbot-system-chat-bot-button-web-app-phone-icon-symbol-editorial-vector-275376231.jpg",
+      },
+      {
+        name: "Gemini API",
+        image:
+          "https://miro.medium.com/v2/resize:fit:1200/1*Q_B5g9fIWoms17JbCKG5Mg.png",
+      },
+      {
+        name: "Jira Software",
+        image:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfmfOzfvndd8YlkOURC-1RlsYEwFBPeTCMew&s",
       },
     ],
   },
@@ -138,7 +174,7 @@ export const skills = [
         name: "Java",
         image:
           "https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg",
-      },      
+      },
       {
         name: "XML",
         image:
@@ -149,16 +185,11 @@ export const skills = [
         image:
           "https://developer.android.com/static/studio/images/new-studio-logo-1_1920.png",
       },
-      {
-        name: "Bootstrap",
-        image:
-          "https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png",
-      },
     ],
   },
   {
     title: "Others",
-    skills: [ 
+    skills: [
       {
         name: "DSA",
         image:
@@ -183,11 +214,10 @@ export const skills = [
         name: "Azure",
         image: "https://swimburger.net/media/ppnn3pcl/azure.png",
       },
-      
+
       {
         name: "Postman",
-        image:
-          "https://cdn.worldvectorlogo.com/logos/postman.svg",
+        image: "https://cdn.worldvectorlogo.com/logos/postman.svg",
       },
       {
         name: "Jest",
@@ -211,7 +241,30 @@ export const skills = [
 export const experiences = [
   {
     id: 0,
-    img: "https://d1rz4ui464s6g7.cloudfront.net/wp-content/uploads/2020/09/01141237/kpit-log-green.jpg",
+    img: "/assets/opstech-logo.png",
+    role: "Full Stack Engineer",
+    company: "KPIT Technologies Limited",
+    date: "Oct 2024 - Dec 2024",
+    desc: "Developed engaging web experiences with improved user engagement using MERN Stack and MySQL. Built full-stack web applications for manufacturers. Streamlined product deployment with Git, Jira and Azure for continuous integration and delivery.",
+    skills: [
+      "JavaScript",
+      "React",
+      "Node.js",
+      "Express.js",
+      "MySQL",
+      "REST APIs",
+      "Azure",
+      "Git",
+      "Docker",
+      "Jest",
+      "Jira",
+      "Mac OS",
+      "Agile Development",
+    ],
+  },
+  {
+    id: 1,
+    img: "/assets/kpit-logo.jpg",
     role: "Software Engineer",
     company: "KPIT Technologies Limited",
     date: "Oct 2021 - Dec 2023",
@@ -220,7 +273,7 @@ export const experiences = [
       "HTML",
       "CSS",
       "JavaScript",
-      "React.jS",
+      "React",
       "Node.js",
       "C++",
       "RESt APIs",
@@ -228,17 +281,17 @@ export const experiences = [
       "Git/GitHub",
       "Docker",
       "Jest",
-      "CANoe",
+      "Embedded Systems",
       "Agile Development",
     ],
   },
   {
-    id: 1,
-    img: "https://cdac.in/img/C-DAC.jpg",
+    id: 2,
+    img: "/assets/cdac-logo.png",
     role: "CDAC Internship",
     company: "CDAC Pune",
     date: "Mar 2021 - Sep 2021",
-    desc: "Built a full stack E-Commerce platform for Electronics items using MERN Stack and deployed it on GitHub. I was the top performer in the program.",
+    desc: "Built a full stack E-Commerce platform for Electronics items using MERN Stack and deployed it on Netlify. I was the top performer in the program.",
     skills: [
       "React.jS",
       "Redux",
@@ -264,11 +317,12 @@ export const education = [
     date: "Jul 2022 - May 2024",
     grade: "7.8 CGPA",
     desc: "I pursued a Master's degree in Software Engineering at Scaler Neovarsity where I learnt advanced Software Development methodologies, Problem Solving and AI/ML technologies throught 2 years. I was a project lead during this course, where I worked on Full Stack Projects like e-commerce site, movie booking app, etc with a team of 5 developers.",
-    degree: "Master's in Computer Science : Specialisation in Software Engineering",
+    degree:
+      "Master's in Computer Science : Specialisation in Software Engineering",
   },
   {
     id: 1,
-    img: "https://media.licdn.com/dms/image/C4D0BAQGObigiUGPxhA/company-logo_200_200/0/1631354037878?e=1726704000&v=beta&t=Aaz_3oyEgheuNTy7mavJTIpiEehtcnN0IjXgRadlKuw",
+    img: "/assets/sunbeam.jpg",
     school: "SunBeam Institute of Information Technology, Pune",
     date: "Mar 2021 - Sep 2021",
     grade: "6.8 CGPA",
@@ -289,73 +343,114 @@ export const education = [
 export const projects = [
   {
     id: 0,
-    title: "LMS System",
-    date: "Apr 2024 - May 2024",
+    title: "React Admin Dashboard",
+    date: "Jan 2025 - Feb 2025",
     description:
-      "Developed a full-stack web application that allows users to search for, book, and see their favorite movies on demand and create playlists. Implemented user authentication using Google Auth and Jwt, made responsive user interface with React JS that provides users with a seamless experience across all devices. Practiced agile methodologies to optimize team efficiency and communication.",
+      "A fully responsive, customizable React Admin Dashboard featuring theming, dynamic tables, interactive charts, calendar integration, Kanban board, and more. Built with modern React practices and powerful libraries to deliver an efficient and scalable admin interface.",
     image:
-      "https://cdn.sanity.io/images/9rg5iv1m/production/52934b464aa65a8669fb80023dc3602e3e4729be-1343x653.png",
-    tags: ["React Js", "MongoDb", "Node Js", "Express Js", "Redux", "Redis", "Material UI"],
+      "/assets/dashboard.png",
+    tags: [
+      "React Js",
+      "Redux",
+      "Tailwind CSS",
+      "Syncfusion UI",
+    ],
     category: "web app",
-    github: "https://github.com/Rohitbadekar-639/LMS-frontend",
-    webapp: "https://leapot-frontend.vercel.app/",
+    github: "https://github.com/Rohitbadekar-639/react_admin_dashboard",
+    webapp: "https://dashboard-two-fawn-42.vercel.app/",
   },
   {
     id: 1,
-    title: "Netflix Clone using React",
-    date: "Jan 2024 - Feb 2024",
+    title: "Employee Management System",
+    date: "Nov 2024 - Dec 2024",
     description:
-      "A Netflix clone made with React JS, Firebase, and Material UI. It has Phone Authentication, Real-time Database. It has a payment gateway where users can buy any subscriptions. It has login and signup pages where users can log in and signup with their emails.",
-    image:
-      "https://user-images.githubusercontent.com/61585443/185205338-c20bb089-618f-49e2-b740-1c02838030a4.png",
-    tags: ["React", "Material UI", "Firebase", "Firestore", "Node JS", "Redux"],
+      "Developed a front-end Employee Management System using React and local storage.  This project allows users to add, view, edit, and delete employee records, demonstrating proficiency in React component lifecycle, state management, and data persistence using local storage.",
+    image: "/assets/ems.png",
+    tags: ["React", "Tailwind CSS", "LocalStorage", "Context API"],
     category: "web app",
-    github: "https://github.com/Rohitbadekar-639/netflix-clone",
-    webapp: "https://github.com/Rohitbadekar-639/netflix-clone",
+    github: "https://github.com/Rohitbadekar-639/Employee-Management-System-using-React",
+    webapp: "https://employee-management-system-using-react-phi.vercel.app/",
   },
   {
     id: 2,
-    title: "AI Image Generator using DALL·E ",
-    date: "Nov 2023 - Dec 2023",
+    title: "Ochi.design clone using React Animations",
+    date: "Oct 2024 - Nov 2024",
     description:
-      "Developed a Full stack AI based Image Generation Application which can generate AI Images from prompts or uploading our own photos.",
-    image: "https://res.cloudinary.com/practicaldev/image/fetch/s--BCI9ai5v--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/x05mhnyzjqj0lwkenqio.png",
-    tags: ["React", "OpenAI APIs", "JavaScript", "Node.js", "MongoDB", "Axios"],
-    category: "machine learning",
-    github: "https://github.com/Rohitbadekar-639/AI-Image-Generator",
-    webapp: "https://github.com/Rohitbadekar-639/AI-Image-Generator",
+      "Created a front-end clone of ochi.design using React, incorporating smooth animations. This project showcases skills in replicating responsive web designs, implementing complex layouts with React components, and adding engaging animations to enhance user experience.",
+    image:
+      "/assets/ochi.design-clone.png",
+    tags: ["React", "Framer Motion", "Tailwind CSS", "GSAP", "Vite"],
+    category: "web app",
+    github: "https://github.com/Rohitbadekar-639/ochi.design-clone-with-react-animations",
+    webapp: "https://ochi-design-clone-with-react-animations.vercel.app/",
   },
   {
     id: 3,
-    title: "Real Time Chat App using Websockets",
-    date: "Oct 2023 - Sep 2023",
+    title: "Real-Time AI Chat app using MERN and Gemini API",
+    date: "Sep 2024 - Oct 2024",
     description:
-      "Developed a Full stack RTOS based real time chat application using Websockets which can communicate with each other in real time fast and secured.",
-    image: "https://camo.githubusercontent.com/dba44c140c0c31b41cb4c50ec5ebfa06d8d3e742e9469d35d4913e78c39540f5/68747470733a2f2f692e696d6775722e636f6d2f566b6477416d652e706e67",
-    tags: ["React", "Websockets", "JavaScript", "Node.js", "MongoDB", "Axios", "REST APIs"],
-    category: "web app",
-    github: "https://github.com/Rohitbadekar-639/Real-Time-Chat-Application",
-    webapp: "https://github.com/Rohitbadekar-639/Real-Time-Chat-Application",
+      "This project demonstrates how to build a Real-Time Chat Application using the MERN stack (MongoDB, Express.js, React.js, and Node.js), integrated with AI capabilities from Google Gemini for enhanced functionality. It leverages Redis for improved performance and utilizes Socket.IO for real-time communication. The application is designed to be beginner-friendly while covering advanced features for skill enhancement.",
+    image: "/assets/mern-chat-with-AI.png",
+    tags: [
+      "React",
+      "Tailwind CSS",
+      "WebSocket",
+      "Node.js","Express",
+      "MongoDB",
+      "Gemini API",
+      "REST API",
+    ],
+    category: "machine learning",
+    github:
+      "https://github.com/Rohitbadekar-639/Real-Time-AI-Powered-Chat-App-with-MERN-Stack-and-Google-Gemini",
+    webapp:
+      "https://real-time-ai-powered-chat-app-with-mern-stack-and-google-gemini.vercel.app",
   },
   {
     id: 4,
-    title: "Todo List Web App",
-    date: "Jun 2023 - Jul 2023",
+    title: "Expense and Income Tracker",
+    date: "Aug 2024 - Sep 2024",
     description:
-      " A Todo Web App made with Next.js and TypeScript. It's a basic daily to-do list app to practice more about Next.js and TypeScript. It has a search bar where users can search for a particular task.",
+      "Developed an Expense and Income Tracker application to manage personal finances.  This project allows users to record income and expenses, categorize transactions, and visualize spending patterns.  Demonstrates skills in data management, user interface design, and potentially data visualization.",
     image:
-      "https://1.bp.blogspot.com/-i78iKr_P9Pk/X9ohjXyc5eI/AAAAAAAAA_4/8UauxZaOgUshGK7MXwW1gZqts7Zrf_AewCLcBGAsYHQ/s1280/Todo%2BList%2BApp%2Busing%2BHTML%2BCSS%2B%2526%2BJavaScript.webp",
-    tags: ["React Js", "AWS", "OAuth", "Node JS", "CodeSandbox"],
+      "/assets/expense-tracker.png",
+    tags: ["React Js", "Next.js","Chart.js", "Recharts", "Node JS", "Jest"],
     category: "web app",
-    github: "https://github.com/Rohitbadekar-639/todolist-typescript-next.js",
-    webapp: "https://todolist-typescript-next-js.vercel.app/",
+    github: "https://github.com/Rohitbadekar-639/expense_tracker",
+    webapp: "https://expense-tracker-one-sage.vercel.app/",
   },
   {
     id: 5,
-    title: "Retail Store Mobile App",
+    title: "Apple Macbook Animation",
+    date: "Jan 2025 - Jan 2025",
+    description:
+      "Created an animated 3D landing page for the Apple MacBook Pro using Three.js. This project showcases skills in 3D modeling, animation with Three.js, and creating visually appealing web experiences.",
+    image:
+      "/assets/macbook-animation.png",
+    tags: ["Vite-React", "React Three Fiber","Three.js"],
+    category: "web app",
+    github: "https://github.com/Rohitbadekar-639/apple-macbook-pro-landing-page-animation-using-three.js",
+    webapp: "https://apple-macbook-pro-landing-page-animation-using-three-js.vercel.app/",
+  },
+  {
+    id: 6,
+    title: "Music Player - Spotify Clone",
+    date: "Jan 2024 - Feb 2024",
+    description:
+      "Developed a Music Player UI, a Spotify clone, using React, featuring inbuilt songs and customizable themes. This project demonstrates proficiency in React component design, state management, audio manipulation, and implementing UI theming.",
+    image:
+      "/assets/music-app.png",
+    tags: ["React", "color-thief-react","styled-components", "Axios"],
+    category: "web app",
+    github: "https://github.com/Rohitbadekar-639/music-player-ui",
+    webapp: "https://music-player-ui-indol.vercel.app/",
+  },
+  {
+    id: 7,
+    title: "StoreKeeper Mobile App",
     date: "Jan 2023 - Feb 2023",
     description:
-      "A product finding app made with React Native, Axios. Users can search for any herbal products coming from datbases and API and buy from there.",
+      "A product listing app made with React Native. User can search for any products coming from datbases and API and buy and track products from there.",
     image:
       "https://templatesjungle.com/wp-content/uploads/edd/2023/05/foodmart-bootstrap-website-template-for-food-store.jpg",
     tags: ["React Native", "JavaScript", "Axios", "Android Studio", "Java"],
