@@ -226,7 +226,7 @@ const HeroSection = () => {
             </TextLoop>
             <SubTitle>{Bio.description}</SubTitle>
             <ResumeButton 
-              href="https://drive.google.com/file/d/1XGFEIXcmmcRtMzIqtKgkVz_VKQNxJapC/view?usp=sharing" 
+              href="https://drive.google.com/file/d/1Nl-eHGS0Rr0qfkBUiP8zPknPeWJ7NEIl/view?usp=sharing" 
               target="_blank" 
               rel="noopener noreferrer">
                 Check Resume
