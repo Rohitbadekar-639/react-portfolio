@@ -11,7 +11,7 @@ export const Bio = {
     "I am a Full Stack Software Engineer with 2+ years of experience. I have a strong foundation in technologies like HTML5, CSS3, JavaScript(ES6+), MERN Stack, Git and REST APIs. I am also proficient in TypeScript, Next.js, Tailwind CSS, MySQL, C++ and Java which allows me to adapt to diverse project requirements.",
   github: "https://github.com/Rohitbadekar-639",
   resume:
-    "https://drive.google.com/file/d/1ZikL10xetTIQIjax8s9mI1-2B3mp21BJ/view?usp=sharing",
+    "https://drive.google.com/file/d/1Nl-eHGS0Rr0qfkBUiP8zPknPeWJ7NEIl/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/rohit-badekar/",
   twitter: "https://twitter.com/rohitbadekar555",
   insta: "https://www.instagram.com/rohit_badekar_7/",
