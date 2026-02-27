@@ -143,19 +143,50 @@ const Contact = () => {
   const [isClicked, setIsClicked] = useState(false);
   const form = useRef();
 
+  const validateForm = () => {
+    const email = form.current.from_email.value;
+    const name = form.current.from_name.value;
+    const subject = form.current.subject.value;
+    const message = form.current.message.value;
+
+    // Check if any field is empty or just whitespace
+    if (!email?.trim() || !name?.trim() || !subject?.trim() || !message?.trim()) {
+      setMessage('Please fill in all fields before sending.');
+      setSeverity('warning');
+      setOpen(true);
+      return false;
+    }
+
+    // Basic email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      setMessage('Please enter a valid email address.');
+      setSeverity('warning');
+      setOpen(true);
+      return false;
+    }
+
+    return true;
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsClicked(true);
     setTimeout(() => setIsClicked(false), 300);
 
+    if (!validateForm()) {
+      return;
+    }
+
     emailjs.sendForm('service_ydwti4g', 'template_1f0yn3e', form.current, 'wAxtNU9_BhAYjFpZL')
       .then(() => {
-        setMessage('Email sent successfully!');
+        setMessage('Email sent successfully! I\'ll get back to you soon.');
         setSeverity('success');
         setOpen(true);
         form.current.reset();
-      }, () => {
-        setMessage('Failed to send email. Please try again.');
+      }, (error) => {
+        console.error('EmailJS error:', error);
+        setMessage('Failed to send email. Please try again or contact directly at rohitbadekar3@gmail.com');
         setSeverity('error');
         setOpen(true);
       });
@@ -169,17 +200,46 @@ const Contact = () => {
     <Container id="contact">
       <Wrapper>
         <Title>Contact</Title>
-        <Desc>Feel free to reach out to me for any questions or opportunities!</Desc>
+        {/* <Desc>Feel free to reach out to me for any questions or opportunities!</Desc> */}
         <ContactForm ref={form} onSubmit={handleSubmit}>
           <ContactTitle>Email Me 🚀</ContactTitle>
-          <ContactInput placeholder="Your Email" name="from_email" required />
-          <ContactInput placeholder="Your Name" name="from_name" required />
-          <ContactInput placeholder="Subject" name="subject" required />
-          <ContactInputMessage placeholder="Message" rows="4" name="message" required />
-          <ContactButton type="submit" value="Send" className={isClicked ? 'clicked' : ''} />
+          <ContactInput 
+            type="email"
+            placeholder="Your Email" 
+            name="from_email" 
+            required 
+            aria-label="Your email address"
+          />
+          <ContactInput 
+            type="text"
+            placeholder="Your Name" 
+            name="from_name" 
+            required 
+            aria-label="Your full name"
+          />
+          <ContactInput 
+            type="text"
+            placeholder="Subject" 
+            name="subject" 
+            required 
+            aria-label="Email subject"
+          />
+          <ContactInputMessage 
+            placeholder="Message" 
+            rows="4" 
+            name="message" 
+            required 
+            aria-label="Your message"
+          />
+          <ContactButton 
+            type="submit" 
+            value="Send" 
+            className={isClicked ? 'clicked' : ''} 
+            aria-label="Send email message"
+          />
         </ContactForm>
         <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
-          <Alert onClose={handleClose} severity={severity} sx={{ width: '100%' }}>
+          <Alert onClose={handleClose} severity={severity} sx={{ width: '100%' }} role="alert">
             {message}
           </Alert>
         </Snackbar>

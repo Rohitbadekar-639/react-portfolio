@@ -209,12 +209,12 @@ const Navbar = () => {
           <FaBars onClick={toggleMenu} />
         </MobileIcon>
         <NavItems>
-          <NavLink href='#about'>About</NavLink>
-          <NavLink href='#skills'>Skills</NavLink>
-          <NavLink href='#experience'>Experience</NavLink>
-          <NavLink href='#projects'>Projects</NavLink>
-          <NavLink href='#education'>Education</NavLink>
-          <NavLink href='#contact'>Contact</NavLink>
+          <NavLink href='#about' aria-label="Navigate to About section">About</NavLink>
+          <NavLink href='#skills' aria-label="Navigate to Skills section">Skills</NavLink>
+          <NavLink href='#experience' aria-label="Navigate to Experience section">Experience</NavLink>
+          <NavLink href='#projects' aria-label="Navigate to Projects section">Projects</NavLink>
+          <NavLink href='#education' aria-label="Navigate to Education section">Education</NavLink>
+          <NavLink href='#contact' aria-label="Navigate to Contact section">Contact</NavLink>
         </NavItems>
         <ButtonContainer>
           <GithubButton onClick={handleGithubButtonClick}>Github Profile</GithubButton>
@@ -222,15 +222,16 @@ const Navbar = () => {
       </NavContainer>
       
       <MobileMenu ref={mobileMenuRef} open={open}>
-      <MobileMenuLinks to='#about' onClick={() => scrollToSection("about")}>About</MobileMenuLinks>
-        <MobileMenuLinks to='#skills' onClick={() => scrollToSection("skills")}>Skills</MobileMenuLinks>
-        <MobileMenuLinks to='#experience' onClick={() => scrollToSection("experience")}>Experience</MobileMenuLinks>
-        <MobileMenuLinks to='#projects' onClick={() => scrollToSection("projects")}>Projects</MobileMenuLinks>
-        <MobileMenuLinks to='#education' onClick={() => scrollToSection("education")}>Education</MobileMenuLinks>
-        <MobileMenuLinks to='#contact' onClick={() => scrollToSection("contact")}>Contact</MobileMenuLinks>
+      <MobileMenuLinks to='#about' onClick={() => scrollToSection("about")} aria-label="Navigate to About section">About</MobileMenuLinks>
+        <MobileMenuLinks to='#skills' onClick={() => scrollToSection("skills")} aria-label="Navigate to Skills section">Skills</MobileMenuLinks>
+        <MobileMenuLinks to='#experience' onClick={() => scrollToSection("experience")} aria-label="Navigate to Experience section">Experience</MobileMenuLinks>
+        <MobileMenuLinks to='#projects' onClick={() => scrollToSection("projects")} aria-label="Navigate to Projects section">Projects</MobileMenuLinks>
+        <MobileMenuLinks to='#education' onClick={() => scrollToSection("education")} aria-label="Navigate to Education section">Education</MobileMenuLinks>
+        <MobileMenuLinks to='#contact' onClick={() => scrollToSection("contact")} aria-label="Navigate to Contact section">Contact</MobileMenuLinks>
         <GithubButton 
           style={{ padding: '10px 16px', background: `${theme.primary}`, color: 'white', width: 'max-content' }} 
           onClick={handleGithubButtonClick}
+          aria-label="Visit Rohit Badekar's GitHub profile"
         >
           Github Profile
         </GithubButton>

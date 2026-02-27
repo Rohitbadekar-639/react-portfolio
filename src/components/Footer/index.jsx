@@ -112,7 +112,7 @@ function Footer() {
           </SocialMediaIcon>
         </SocialMediaIcons>
         <Copyright>
-          &copy; 2024 Rohit Badekar. All rights reserved.
+          &copy; 2026 Rohit Badekar. All rights reserved.
         </Copyright>
       </FooterWrapper>
     </FooterContainer>

@@ -120,9 +120,10 @@ const ResumeButton = styled.a`
   background: linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
   border-radius: 30px;
   cursor: pointer;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.3s ease-in-out;
   box-shadow: 20px 20px 60px #1F2634, -20px -20px 60px #1F2634;
   position: relative; 
+  transform: translateY(0);
   &::after {
     content: "";
     position: absolute;
@@ -132,13 +133,19 @@ const ResumeButton = styled.a`
     height: 100%;
     background: inherit; 
     opacity: 0;
-    transition: all 0.4s ease-in-out;
+    transition: all 0.3s ease-in-out;
     border-radius: inherit; 
   }
   &:hover {
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 25px 25px 70px #1F2634, -25px -25px 70px #1F2634;
     &::after {
-      opacity: 0.3; 
+      opacity: 0.2; 
     }
+  }
+  &:active {
+    transform: translateY(0) scale(0.98);
+    transition: all 0.1s ease-in-out;
   }
   @media (max-width: 640px) {
     padding: 12px 30px;
@@ -201,14 +208,14 @@ const HeroBg = styled.div`
 
 const HeroSection = () => {
   return (
-    <div id="about">
+    <section id="about" aria-label="About section">
       <HeroContainer>
         <HeroBg>
           <HeroBgAnimation />
         </HeroBg>
         <HeroInnerContainer>
           <HeroLeftContainer id="Left">
-            <Title>Hello, Myself <br /> {Bio.name}</Title>
+            <Title>Hi, I am <br /> {Bio.name}</Title>
             <TextLoop>
               I am a
               <Span>
@@ -228,18 +235,19 @@ const HeroSection = () => {
             <ResumeButton 
               href="https://drive.google.com/file/d/1Nl-eHGS0Rr0qfkBUiP8zPknPeWJ7NEIl/view?usp=sharing" 
               target="_blank" 
-              rel="noopener noreferrer">
+              rel="noopener noreferrer"
+              aria-label="Download Rohit Badekar's resume">
                 Check Resume
             </ResumeButton>
           </HeroLeftContainer>
 
           <HeroRightContainer id="Right">
-            <Img src="/assets/HeroImage.webp" alt="Hero image of Rohit Badekar" loading="lazy" />
+            <Img src="/assets/rohit.png" alt="Professional headshot of Rohit Badekar, Frontend Engineer" loading="lazy" />
           </HeroRightContainer>
         </HeroInnerContainer>
       </HeroContainer>
-    </div>
+    </section>
   );
-}
+};
 
 export default HeroSection;
