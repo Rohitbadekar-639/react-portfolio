@@ -62,6 +62,16 @@ const SkillsContainer = styled.div`
   margin-top: 30px;
   gap: 30px;
   justify-content: center;
+  
+  @media (max-width: 768px) {
+    gap: 20px;
+    padding: 0 10px;
+  }
+  
+  @media (max-width: 480px) {
+    gap: 15px;
+    padding: 0 5px;
+  }
 `;
 
 const Skill = styled.div`
@@ -72,13 +82,15 @@ const Skill = styled.div`
   box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
   border-radius: 16px;
   padding: 18px 36px;
+  
   @media (max-width: 768px) {
     max-width: 400px;
-    padding: 10px 36px;
+    padding: 15px 25px;
   }
-  @media (max-width: 500px) {
-    max-width: 330px;
-    padding: 10px 16px;
+  
+  @media (max-width: 480px) {
+    max-width: 100%;
+    padding: 12px 20px;
   }
 `;
 
@@ -109,19 +121,48 @@ const SkillItem = styled.div`
   align-items: center;
   justify-content: center;
   gap: 8px;
+  background: ${({ theme }) => theme.card};
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(132, 59, 206, 0.1), transparent);
+    transition: left 0.5s ease;
+  }
+  
   @media (max-width: 768px) {
     font-size: 14px;
     padding: 8px 12px;
   }
+  
   &:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(132, 59, 206, 0.15);
+    border-color: ${({ theme }) => theme.primary};
+    color: ${({ theme }) => theme.text_primary};
+    
+    &::before {
+      left: 100%;
+    }
   }
 `;
 
 const SkillImage = styled.img`
   width: 24px;
   height: 24px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  
+  ${SkillItem}:hover & {
+    transform: rotate(360deg) scale(1.3);
+    filter: drop-shadow(0 2px 4px rgba(132, 59, 206, 0.4));
+  }
 `;
 
 const Skills = () => {

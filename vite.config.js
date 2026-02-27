@@ -9,15 +9,6 @@ export default defineConfig({
     open: true
   },
   build: {
-    rollupOptions: {
-      output: {
-        manualChunks: {
-          vendor: ['react', 'react-dom'],
-          ui: ['@mui/material', '@mui/icons-material', 'styled-components'],
-          utils: ['react-router-dom', 'react-scroll', 'typewriter-effect']
-        }
-      }
-    },
     chunkSizeWarningLimit: 1000,
     sourcemap: true
   },
