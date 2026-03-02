@@ -375,8 +375,20 @@ export const projects = [
       "/assets/fleet.png",
     tags: ["React", "color-thief-react","styled-components", "Axios"],
     category: "web app",
-    github: "https://github.com/Rohitbadekar-639/music-player-ui",
+    github: "https://github.com/Rohitbadekar-639/fleet-dashboard",
     webapp: "https://fleet-dashboard-rouge.vercel.app/",
+  },
+  {
+    id: 7,
+    title: "Admin Panel (Shadcn UI)",
+    date: "Jan 2024 - Feb 2024",
+    description:
+      "Modern, responsive admin dashboard built with shadcn/ui featuring analytics charts, role management, and real-time user insights for scalable web applications.",
+    image:
+      "/assets/shadcn-admin-panel.png",
+    tags: ["React", "Next.js","shadcn/ui"],
+    category: "web app",
+    webapp: "https://admin-panel-shadcn.vercel.app/",
   },
   // {
   //   id: 7,
