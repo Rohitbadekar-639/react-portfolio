@@ -10,6 +10,11 @@ import Experience from "./components/Experience/index.jsx";
 import Projects from "./components/Projects/index.jsx";
 import Contact from "./components/Contact/index.jsx";
 import Footer from "./components/Footer/index.jsx";
+import { Suspense, lazy } from 'react';
+
+const LazyProjects = lazy(() => import('./components/Projects/index.jsx'));
+const LazyEducation = lazy(() => import('./components/Education/index.jsx'));
+const LazyContact = lazy(() => import('./components/Contact/index.jsx'));
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -52,10 +57,16 @@ function App() {
             <Skills />
             <Experience />
           </Wrapper>
-          <Projects />
+          <Suspense fallback={<div style={{ height: '400px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>Loading...</div>}>
+            <LazyProjects />
+          </Suspense>
           <Wrapper>
-            <Education />
-            <Contact />
+            <Suspense fallback={<div style={{ height: '400px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>Loading...</div>}>
+              <LazyEducation />
+            </Suspense>
+            <Suspense fallback={<div style={{ height: '400px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>Loading...</div>}>
+              <LazyContact />
+            </Suspense>
           </Wrapper>
           <Footer />
         </Body>

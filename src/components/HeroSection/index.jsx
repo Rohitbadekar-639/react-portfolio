@@ -1,4 +1,4 @@
-import React, { Suspense, lazy } from 'react';
+import React, { Suspense, lazy, memo } from 'react';
 import styled from "styled-components";
 import HeroBgAnimation from '../HeroBgAnimation';
 import { Bio } from '../../data/constants';
@@ -242,7 +242,16 @@ const HeroSection = () => {
           </HeroLeftContainer>
 
           <HeroRightContainer id="Right">
-            <Img src="/assets/rohit-hero-section.jpg" alt="Professional headshot of Rohit Badekar, Frontend Engineer" loading="lazy" />
+            <Img 
+              src="/assets/rohit-hero-section.jpg" 
+              alt="Professional headshot of Rohit Badekar, Frontend Engineer" 
+              loading="eager"
+              decoding="async"
+              fetchpriority="high"
+              width="400"
+              height="400"
+              style={{ objectFit: 'cover' }}
+            />
           </HeroRightContainer>
         </HeroInnerContainer>
       </HeroContainer>
@@ -250,4 +259,4 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection;
+export default memo(HeroSection);

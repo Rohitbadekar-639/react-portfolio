@@ -10,7 +10,16 @@ export default defineConfig({
   },
   build: {
     chunkSizeWarningLimit: 1000,
-    sourcemap: true
+    sourcemap: false,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ['react', 'react-dom'],
+          mui: ['@mui/material', '@mui/icons-material'],
+          utils: ['styled-components', 'typewriter-effect', 'react-scroll']
+        }
+      }
+    }
   },
   optimizeDeps: {
     include: ['react', 'react-dom', 'styled-components']

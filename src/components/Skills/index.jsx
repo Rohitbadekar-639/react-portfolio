@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { memo } from 'react'
 import styled from 'styled-components'
 import { skills } from '../../data/constants'
 
@@ -191,4 +191,4 @@ const Skills = () => {
   );
 };
 
-export default Skills;
+export default memo(Skills);

@@ -4,6 +4,8 @@ import styled from 'styled-components';
 const Div = styled.div`
     width: 500px;
     height: 500px;
+    will-change: transform;
+    transform: translateZ(0);
 `
 
 const HeroBgAnimation = () => (

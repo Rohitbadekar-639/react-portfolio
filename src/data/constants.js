@@ -264,7 +264,7 @@ export const education = [
 export const projects = [
   {
     id: 0,
-    title: "High-Performance Dashboard (SaaS)",
+    title: "SaaS Admin Dashboard",
     date: "Jan 2025 - Feb 2025",
     description:
       "A fully responsive, customizable React Admin Dashboard featuring theming, dynamic tables, interactive charts, calendar integration, Kanban board, and more. Built with modern React practices and powerful libraries to deliver an efficient and scalable admin interface.",
@@ -282,32 +282,7 @@ export const projects = [
   },
   {
     id: 1,
-    title: "Employee Management System",
-    date: "Nov 2024 - Dec 2024",
-    description:
-      "Developed a front-end Employee Management System using React and local storage.  This project allows users to add, view, edit, and delete employee records, demonstrating proficiency in React component lifecycle, state management, and data persistence using local storage.",
-    image: "/assets/ems.png",
-    tags: ["React", "Tailwind CSS", "LocalStorage", "Context API"],
-    category: "web app",
-    github: "https://github.com/Rohitbadekar-639/Employee-Management-System-using-React",
-    webapp: "https://employee-management-system-using-react-phi.vercel.app/",
-  },
-  {
-    id: 2,
-    title: "Ochi.design clone website with animations",
-    date: "Oct 2024 - Nov 2024",
-    description:
-      "Created a front-end clone of ochi.design using React, incorporating smooth animations. This project showcases skills in replicating responsive web designs, implementing complex layouts with React components, and adding engaging animations to enhance user experience.",
-    image:
-      "/assets/ochi.design-clone.png",
-    tags: ["React", "Framer Motion", "Tailwind CSS", "GSAP", "Vite"],
-    category: "web app",
-    github: "https://github.com/Rohitbadekar-639/ochi.design-clone-with-react-animations",
-    webapp: "https://ochi-design-clone-with-react-animations.vercel.app/",
-  },
-  {
-    id: 3,
-    title: "AI-powered Real-Time Chat app (MERN and Gemini API)",
+    title: "Real-Time AI Chat App",
     date: "Sep 2024 - Oct 2024",
     description:
       "This project demonstrates how to build a Real-Time Chat Application using the MERN stack (MongoDB, Express.js, React.js, and Node.js), integrated with AI capabilities from Google Gemini for enhanced functionality. It leverages Redis for improved performance and utilizes Socket.IO for real-time communication. The application is designed to be beginner-friendly while covering advanced features for skill enhancement.",
@@ -327,6 +302,31 @@ export const projects = [
       "https://real-time-ai-powered-chat-app-with-mern-stack-and-google-gemini.vercel.app",
   },
   {
+    id: 2,
+    title: "ochi.design clone",
+    date: "Oct 2024 - Nov 2024",
+    description:
+      "Created a front-end clone of ochi.design using React, incorporating smooth animations. This project showcases skills in replicating responsive web designs, implementing complex layouts with React components, and adding engaging animations to enhance user experience.",
+    image:
+      "/assets/ochi.design-clone.png",
+    tags: ["React", "Framer Motion", "Tailwind CSS", "GSAP", "Vite"],
+    category: "web app",
+    github: "https://github.com/Rohitbadekar-639/ochi.design-clone-with-react-animations",
+    webapp: "https://ochi-design-clone-with-react-animations.vercel.app/",
+  },
+  {
+    id: 3,
+    title: "Employee Management System",
+    date: "Nov 2024 - Dec 2024",
+    description:
+      "Developed a front-end Employee Management System using React and local storage.  This project allows users to add, view, edit, and delete employee records, demonstrating proficiency in React component lifecycle, state management, and data persistence using local storage.",
+    image: "/assets/ems.png",
+    tags: ["React", "LocalStorage", "Context API"],
+    category: "web app",
+    github: "https://github.com/Rohitbadekar-639/Employee-Management-System-using-React",
+    webapp: "https://employee-management-system-using-react-phi.vercel.app/",
+  },
+  {
     id: 4,
     title: "Expense and Income Tracker",
     date: "Aug 2024 - Sep 2024",
@@ -341,7 +341,7 @@ export const projects = [
   },
   {
     id: 5,
-    title: "Apple Macbook Pro Animation",
+    title: "Apple Website Animation",
     date: "Jan 2025 - Jan 2025",
     description:
       "Created an animated 3D landing page for the Apple MacBook Pro using Three.js. This project showcases skills in 3D modeling, animation with Three.js, and creating visually appealing web experiences.",
@@ -354,7 +354,7 @@ export const projects = [
   },
   {
     id: 6,
-    title: "Music Player",
+    title: "Music Player UI",
     date: "Jan 2024 - Feb 2024",
     description:
       "Developed a Music Player UI, a Spotify clone, using React, featuring inbuilt songs and customizable themes. This project demonstrates proficiency in React component design, state management, audio manipulation, and implementing UI theming.",
@@ -366,7 +366,7 @@ export const projects = [
     webapp: "https://music-player-ui-indol.vercel.app/",
   },
   {
-    id: 8,
+    id: 7,
     title: "Fleet Tracking Dashboard",
     date: "Jan 2024 - Feb 2024",
     description:
@@ -376,7 +376,7 @@ export const projects = [
     tags: ["React", "color-thief-react","styled-components", "Axios"],
     category: "web app",
     github: "https://github.com/Rohitbadekar-639/music-player-ui",
-    webapp: "https://music-player-ui-indol.vercel.app/",
+    webapp: "https://fleet-dashboard-rouge.vercel.app/",
   },
   // {
   //   id: 7,

@@ -5,6 +5,22 @@
     <link rel="icon" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#854CE6" />
+    
+    <!-- Preload critical resources for LCP -->
+    <link rel="preload" href="/assets/rohit-hero-section.jpg" as="image" fetchpriority="high" />
+    
+    <!-- DNS prefetch for external resources -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="//drive.google.com" />
+    
+    <!-- Font optimization to prevent CLS -->
+    <style>
+      body {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+        font-display: swap;
+      }
+    </style>
+    
     <meta
       name="description"
       content="Rohit Badekar - Frontend Engineer Portfolio | React, Next.js, TypeScript, Tailwind CSS | Modern web development with AI integration and performance optimization"
