@@ -264,6 +264,18 @@ export const education = [
 export const projects = [
   {
     id: 0,
+    title: "AI Content Generator SaaS App",
+    date: "Jan 2026 - Apr 2026",
+    description:
+      "Built a production-ready AI SaaS with multiple content templates (blogs, marketing, code), enabling users to generate high-quality content instantly; integrated Razorpay for real-time payments and successfully onboarded paying users.",
+    image:
+      "/assets/ai-content-generator.png",
+    tags: ["React", "Next.js","TypeScript", "AI LLM Integration"],
+    category: "web app",
+    webapp: "https://rapidcontent.vercel.app",
+  },
+  {
+    id: 1,
     title: "SaaS Admin Dashboard",
     date: "Jan 2025 - Feb 2025",
     description:
@@ -281,7 +293,7 @@ export const projects = [
     webapp: "https://dashboard-two-fawn-42.vercel.app/",
   },
   {
-    id: 1,
+    id: 2,
     title: "Real-Time AI Chat App",
     date: "Sep 2024 - Oct 2024",
     description:
@@ -302,7 +314,7 @@ export const projects = [
       "https://real-time-ai-powered-chat-app-with-mern-stack-and-google-gemini.vercel.app",
   },
   {
-    id: 2,
+    id: 3,
     title: "ochi.design clone",
     date: "Oct 2024 - Nov 2024",
     description:
@@ -315,7 +327,7 @@ export const projects = [
     webapp: "https://ochi-design-clone-with-react-animations.vercel.app/",
   },
   {
-    id: 3,
+    id: 4,
     title: "Employee Management System",
     date: "Nov 2024 - Dec 2024",
     description:
@@ -327,7 +339,7 @@ export const projects = [
     webapp: "https://employee-management-system-using-react-phi.vercel.app/",
   },
   {
-    id: 4,
+    id: 5,
     title: "Expense and Income Tracker",
     date: "Aug 2024 - Sep 2024",
     description:
@@ -340,7 +352,7 @@ export const projects = [
     webapp: "https://expense-tracker-one-sage.vercel.app/",
   },
   {
-    id: 5,
+    id: 6,
     title: "Apple Website Animation",
     date: "Jan 2025 - Jan 2025",
     description:
@@ -353,7 +365,7 @@ export const projects = [
     webapp: "https://apple-macbook-pro-landing-page-animation-using-three-js.vercel.app/",
   },
   {
-    id: 6,
+    id: 7,
     title: "Music Player UI",
     date: "Jan 2024 - Feb 2024",
     description:
@@ -366,7 +378,7 @@ export const projects = [
     webapp: "https://music-player-ui-indol.vercel.app/",
   },
   {
-    id: 7,
+    id: 8,
     title: "Fleet Tracking Dashboard",
     date: "Jan 2024 - Feb 2024",
     description:
@@ -378,31 +390,6 @@ export const projects = [
     github: "https://github.com/Rohitbadekar-639/fleet-dashboard",
     webapp: "https://fleet-dashboard-rouge.vercel.app/",
   },
-  {
-    id: 7,
-    title: "AI Content Generator SaaS app",
-    date: "Jan 2026 - Apr 2026",
-    description:
-      "Create high-quality blog posts, social media content, marketing copy, and more with our advanced AI technology. Start free, then get lifetime access for just ₹99",
-    image:
-      "/assets/shadcn-admin-panel.png",
-    tags: ["React", "Next.js","TypeScript", "AI LLM Integration"],
-    category: "web app",
-    webapp: "https://rapidcontent.vercel.app",
-  },
-  // {
-  //   id: 7,
-  //   title: "Mobile App",
-  //   date: "Jan 2023 - Feb 2023",
-  //   description:
-  //     "A product listing app made with React Native. User can search for any products coming from datbases and API and buy and track products from there.",
-  //   image:
-  //     "https://templatesjungle.com/wp-content/uploads/edd/2023/05/foodmart-bootstrap-website-template-for-food-store.jpg",
-  //   tags: ["React Native", "JavaScript", "Axios", "Android Studio", "Java"],
-  //   category: "android app",
-  //   github: "https://github.com/Rohitbadekar-639/Tindog-Store",
-  //   webapp: "https://rohitbadekar-639.github.io/Tindog-Store/",
-  // },
 ];
 
 export const TimeLineData = [
