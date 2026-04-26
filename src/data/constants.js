@@ -380,15 +380,15 @@ export const projects = [
   },
   {
     id: 7,
-    title: "Admin Panel (Shadcn UI)",
-    date: "Jan 2024 - Feb 2024",
+    title: "AI Content Generator SaaS app",
+    date: "Jan 2026 - Apr 2026",
     description:
-      "Modern, responsive admin dashboard built with shadcn/ui featuring analytics charts, role management, and real-time user insights for scalable web applications.",
+      "Create high-quality blog posts, social media content, marketing copy, and more with our advanced AI technology. Start free, then get lifetime access for just ₹99",
     image:
       "/assets/shadcn-admin-panel.png",
-    tags: ["React", "Next.js","shadcn/ui"],
+    tags: ["React", "Next.js","TypeScript", "AI LLM Integration"],
     category: "web app",
-    webapp: "https://admin-panel-shadcn.vercel.app/",
+    webapp: "https://rapidcontent.vercel.app",
   },
   // {
   //   id: 7,
