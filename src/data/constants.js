@@ -264,13 +264,13 @@ export const education = [
 export const projects = [
   {
     id: 0,
-    title: "AI Content Generator SaaS App",
+    title: "AI Content Generator SaaS",
     date: "Jan 2026 - Apr 2026",
     description:
-      "Built a production-ready AI SaaS with multiple content templates (blogs, marketing, code), enabling users to generate high-quality content instantly; integrated Razorpay for real-time payments and successfully onboarded paying users.",
+      "Built a real monetizable production AI SaaS with multiple content templates (blogs, marketing, code), enabling users to generate high-quality content instantly; integrated Razorpay for real-time payments and successfully onboarded active users.",
     image:
       "/assets/ai-content-generator.png",
-    tags: ["React", "Next.js","TypeScript", "AI LLM Integration"],
+    tags: ["React", "Next.js","TypeScript", "Tailwind CSS", "Groq API", "Neon DB", "Clerk Auth", "Razorpay"],
     category: "web app",
     webapp: "https://rapidcontent.vercel.app",
   },
