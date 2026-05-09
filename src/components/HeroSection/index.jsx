@@ -233,7 +233,7 @@ const HeroSection = () => {
             </TextLoop>
             <SubTitle>{Bio.description}</SubTitle>
             <ResumeButton 
-              href="https://drive.google.com/file/d/1Nl-eHGS0Rr0qfkBUiP8zPknPeWJ7NEIl/view?usp=sharing" 
+              href="https://drive.google.com/file/d/1BrCrmXnjqMgcgTmjcY-0e_UGNSFn5sG6/view?usp=sharing" 
               target="_blank" 
               rel="noopener noreferrer"
               aria-label="Download Rohit Badekar's resume">
