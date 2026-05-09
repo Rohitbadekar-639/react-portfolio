@@ -11,7 +11,7 @@ export const Bio = {
     "Frontend Engineer with ~3 years of experience. I have a strong foundation in technologies like HTML5, CSS3, JavaScript(ES6+), React, Git and REST APIs. I am also proficient in TypeScript, Next.js, Tailwind CSS, Redux, Framer, Three.js, CI/CD, UI/UX and Agentic AI which allows me to adapt to diverse project requirements.",
   github: "https://github.com/Rohitbadekar-639",
   resume:
-    "https://drive.google.com/file/d/1Nl-eHGS0Rr0qfkBUiP8zPknPeWJ7NEIl/view?usp=sharing",
+    "https://drive.google.com/file/d/1BrCrmXnjqMgcgTmjcY-0e_UGNSFn5sG6/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/rohit-badekar",
   twitter: "https://twitter.com/rohitbadekar555",
   insta: "https://www.instagram.com/rohit_badekar_7",
